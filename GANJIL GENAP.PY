@@ -1,0 +1,13 @@
+"ALAT PENGHITNG ANGKA GANJIL DAN GENAP "
+
+"INPUT ANGKA"
+X = int(input("Masukkan Angka : "))
+
+"LOGIKA PENGHITUNGAN"
+if X % 2 == 0:
+    print("Angka", X, "Termasuk Bilangan Genap")
+"UNTUK CODINGAN DIATAS UNTUK MENENTUKAN ANGKA GENAP YANG HABIS DI BAGI 2"
+if X % 2 != 0:
+    print("Angka", X, "Termasuk Bilangan Ganjil")
+" UNTUK CODINGAN DIATAS UNTUK MENENTUKAN ANGKA GANJIL YANG TIDAK HABIS DI BAGI 2 "
+"DONE"

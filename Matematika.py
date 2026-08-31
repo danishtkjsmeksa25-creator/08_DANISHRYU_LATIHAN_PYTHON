@@ -8,7 +8,6 @@ x = int(input("Masukkan angka: "))
 
 print(f"Bilangan prima dari 1 sampai {x} adalah: {Bilangan.Mencari_Bilangan_Prima(x)}")
 
-
 # Input ganjil genap
 x = int(input("Masukkan angka: "))
 

@@ -1,4 +1,4 @@
-import bangundatar
+import Bilangan
 
 while True:
     print("\n==============================")
@@ -27,14 +27,14 @@ while True:
                 panjang = int(input("Masukkan panjang: "))
                 lebar = int(input("Masukkan lebar: "))
 
-                hasil = bangundatar.hitung_luas_persegi(panjang, lebar)
+                hasil = Bilangan.hitung_luas_persegi(panjang, lebar)
                 print(f"Luas Persegi Panjang: {hasil}")
 
             elif pilih_bangun == "2":
                 alas = int(input("Masukkan alas: "))
                 tinggi = int(input("Masukkan tinggi: "))
 
-                hasil = bangundatar.hitung_luas_segitiga(alas, tinggi)
+                hasil = Bilangan.hitung_luas_segitiga(alas, tinggi)
                 print(f"Luas Segitiga: {hasil}")
 
             elif pilih_bangun == "3":

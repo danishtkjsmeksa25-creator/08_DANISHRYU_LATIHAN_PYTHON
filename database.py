@@ -1,6 +1,7 @@
 import gspread
 from google.oauth2.service_account import Credentials
 from datetime import datetime
+from getpass import getpass
 
 scope = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -24,7 +25,7 @@ if sheet.cell(1, 1).value is None:
 
 # Input data
 username = input("Masukkan username : ")
-kode = input("Masukkan kode     : ")
+kode = getpass("Masukkan kode     : ")
 
 # Waktu saat data dimasukkan
 timer = datetime.now().strftime("%H:%M:%S")
@@ -32,7 +33,7 @@ timer = datetime.now().strftime("%H:%M:%S")
 # Masukkan ke Google Sheets
 sheet.append_row([username, kode, timer])
 
-print("Data berhasil disimpan!")
+print("\nData berhasil disimpan!")
 print("Username :", username)
-print("Kode     :", kode)
+print("Kode     : ********")
 print("Timer    :", timer)
